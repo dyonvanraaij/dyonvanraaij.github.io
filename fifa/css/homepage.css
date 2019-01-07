@@ -1,0 +1,64 @@
+body {
+	background-image: url("background.jpg");
+	background-color: white;
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+   	padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    text-align: center;
+}
+li {
+    float: center;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+li a {
+    display: block;
+    color: white;
+   	text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: gray;
+}
+li a:hover {
+    background-color: black;
+}
+h1 {
+	color: white;
+    text-align: center;
+}
+header {
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    font-size: 150px
+    color: white;
+}
+div.a {
+    text-align: center;
+}
+div.b {
+    text-align: center;
+    float: center;
+    opacity: 1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 40px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  background-color: rgb(240, 240, 240);
+  opacity: 0.8;
+}
