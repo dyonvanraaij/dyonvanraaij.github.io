@@ -38,6 +38,7 @@ img {
 /* Navigation */
 
 .main-nav ul {
+
     display: grid;
     grid-gap: 20px;
     padding: 0;
@@ -46,7 +47,7 @@ img {
 }
 
 .main-nav a{
-    background: var(--primairy);
+    background: url(achtergrond.jpeg);
     display: block;
     text-decoration: none;
     padding: 0.8rem;
@@ -101,7 +102,7 @@ img {
 
 /* Top box */
 .top-box {
-    background: var(--primary);
+    background: url(achtergrond.jpeg);
     display: grid;
     align-items: center;
     justify-items: center;
@@ -129,11 +130,12 @@ img {
 }
 
 .box {
-    background: var(--primary);
+    background: url(achtergrond.jpeg);
     text-align: center;
     padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
 }
+
 
 /* info */
 .info {
@@ -165,6 +167,11 @@ footer {
     color: var(--light);
     text-align: center;
     padding: 1rem;
+}
+
+a {
+    color: var(--light);
+    padding: 5px;
 }
 
 /* media quereis */
