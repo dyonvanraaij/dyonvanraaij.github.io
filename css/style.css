@@ -47,7 +47,7 @@ img {
 }
 
 .main-nav a{
-    background: url(achtergrond.jpeg);
+    background: var(--primary);
     display: block;
     text-decoration: none;
     padding: 0.8rem;
@@ -102,7 +102,7 @@ img {
 
 /* Top box */
 .top-box {
-    background: url(achtergrond.jpeg);
+    background: var(--primary);
     display: grid;
     align-items: center;
     justify-items: center;
@@ -130,7 +130,7 @@ img {
 }
 
 .box {
-    background: url(achtergrond.jpeg);
+    background: var(--primary);
     text-align: center;
     padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
