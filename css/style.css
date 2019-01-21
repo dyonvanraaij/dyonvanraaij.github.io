@@ -97,6 +97,7 @@ img {
   font-size: 5rem;
   margin-bottom: 0;
   color: var(--light);
+  text-align: left;
 }
 
 .showcase p {
