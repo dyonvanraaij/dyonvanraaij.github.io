@@ -4,7 +4,6 @@
   --dark: #333;
   --light: #fff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  --background: #0cf;
 }
 
 html {
@@ -14,7 +13,6 @@ html {
 }
 
 body {
-  background: var(--background);
   background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center;
