@@ -2,73 +2,124 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Home</title>
-  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
-    integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- W3 stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Dyon van Raaij</title>
 </head>
 
-<body>
-  <!--navbar-->
-  <div class="wrapper">
-    <div class="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<body class="bg-gray">
+  <div class="container">
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#wiebenik">Wie ben ik?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#intresses">Mijn intresses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cases">Cases</a>
+        </li>
       </ul>
+    </nav>
+  </div>
+
+  <!-- header -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 col-md-6 p-5 mt-md-5">
+        <h3>Dyon van Raaij</h3>
+        <span class="txt-type" data-wait="3000"
+          data-words="[&quot;Developer&quot;, &quot;Web Designer&quot;, &quot;Creator&quot;]"><span
+            class="txt">Developer</span></span>
+      </div>
+
+      <div class="col-md-3 sm-display-none p-5">
+        <img src="" alt="Profiel foto" height="150px">
+      </div>
     </div>
 
-    <!--showcase-->
-    <section class="top-container">
-      <header class="showcase">
-        <h1>
-          Dyon van Raaij is een
-          <span class="txt-type" data-wait="3000"
-            data-words="[&quot;Developer&quot;, &quot;Web Designer&quot;, &quot;Creator&quot;]"></span>
-        </h1>
-      </header>
-    </section>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+      tabindex="0">
+      <h4 id="wiebenik" class="pt-3">Wie ben ik?</h4>
+      <p>Mijn naam is Dyon van Raaij een leergierig en hardwerkende HBO-ICT student aan het Fonty’s Eindhoven. Afgelopen
+        jaar heb ik mijn MBO opleiding ICT applicatie- en mediaontwikkeling afgrond aan het ROC Midden Nederland. Daar
+        heb ik tijdens mijn studie goede resultaten behaald op Nederlands, Engels, Front-end Development en backend
+        Development. Tijdens mijn studie heb ik enorm veel over HTML, CSS, Sass, SQL en PHP geleerd. Ook heb ik tijdens
+        mijn stage bij LMS veel geleerd over React. Hoewel ik graag zelfstandig werk, vind ik het ook zeer prettig om
+        samen te werken met collega's en klanten om een gemeenschappelijk doel te bereiken. Komend half jaar ga ik op
+        HBO-ICT veel oriënteren over bepaalde richtingen. De rest van de studie ga ik mijn concentreren op software
+        development en hoop ik daar enorm veel nieuwe dingen in te leren.</p>
 
-    <section class="top-container">
-      <header class="showcase">
-        <a href="about.html" class="btn">Lees meer</a>
-      </header>
-    </section>
 
-    <section class="boxes">
-      <div class="box">
-        <img src="images/linkedin.jpg" width="200px" />
-        <p>Klik op 'Lees meer' voor mijn linkedin profiel.</p>
-        <a class="btn" href="https://www.linkedin.com/in/dyon-van-raaij-350770175/" target="_blank">Lees meer</a>
+      <h4 id="intresses" class="pt-3">Mijn intresses</h4>
+      <h4 id="cases" class="pt-3">Project cases</h4>
+      <!-- case 1 -->
+      <div class="row p-3">
+        <div class="col-12 col-md-4">
+          <img src="./images/lms.png" alt="" height="200px"
+          style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        
+        <div class="col-12 col-md-8">
+          Dit is een project van mijn stage waarbij er een crisisdashboard gemaakt werd. Hier heb een stuk aan mee
+          gewerkt tijdens mijn stage. Hierbij heb ik een Sidebar component gemaakt wat in verbinding stond met het
+          dashboard waar je uitgebreidere informatie kon zien. Dit project is ontwikkeld in React. Heel veel meer kan ik
+          u niet laten zien of uitleggen i.v.m. Geheimhoudingsplicht.
+        </div>
       </div>
-      <div class="box">
-        <img src="images/study.jpeg" width="200px" />
-        <p>
-          Als u op 'Lees meer' klikt kunt u wat meer vinden over mij en de
-          studie die ik doe.
+
+      <hr>
+
+      <!-- case 2 -->
+      <div class="row p-3">
+        <div class="col-12 col-md-8">
+          <h6>Bioscoop opdracht MBO</h6>
+          <p>
+          Dit is een project die ik met een klasgenoot moest maken in het 3e jaar, de bedoeling van het project was dat
+          alles gemaakt is in standaard PHP met behulp van een MVC. Dus geen frameworks. Op de website kan je een zaal
+          van een bepaalde bioscoop huren om in te gamen met bijvoorbeeld een kinderfeestje. Dit hebben we zo ontwikkeld
+          dat je afspraken kan maken en informatie moet invoeren, er word automatisch bekeken of die datum en tijd
+          beschikbaar is. De data word opgeslagen in de database zodat het gemakkelijk terug te vinden is. Ook zit een
+          CMS systeem aan vast gekoppeld en kunnen bepaalde tekst delen van de website worden aangepast.
         </p>
-        <a href="about.html" class="btn">Lees meer</a>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="./images/bios.png" alt="" height="200px"
+          style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!--Footer-->
-    <footer>
-      <p>Dyon van Raaij &copy; 2019</p>
-      <a href="https://www.instagram.com/dyon.vr" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="https://www.snapchat.com/add/ijfc_dyon" target="_blank"><i class="fab fa-snapchat-ghost fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/dyon-v-350770175/" target="_blank"><i
-          class="fab fa-linkedin-in fa-2x"></i></a>
-    </footer>
+    <!-- image modal -->
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
+      </div>
+    </div>
 
-    <!--wrapper ends-->
-  </div>
-  <script src="js/main.js"></script>
+    <p>Dyon van Raaij © 2021</p>
+
+  <!-- Bootstrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
