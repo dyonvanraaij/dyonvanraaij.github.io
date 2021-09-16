@@ -71,3 +71,11 @@ class TypeWriter {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
   }
+
+  var offset = 80;
+
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
