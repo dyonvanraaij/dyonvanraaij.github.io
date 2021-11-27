@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-border {
+    border-right: 2px solid rgba(255, 255, 255, 0.25);
+    border-left: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,0.250);
+}
