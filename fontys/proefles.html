@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>Djonno fitness</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -44,53 +44,75 @@
     </nav>
     <!-- end navbar -->
 
-    <!-- begin container -->
     <div class="container pt-4 mt-md-5">
-        <div class="row">
-            <div class="col-md-4 col-12 d-flex justify-content-center pl-md-5">
-                <img src="img/gym1.jpeg" alt="Gym image" height="250px">
-            </div>
-            <div class="col-md-4 col-12 d-flex justify-content-center">
-                <div class="row my-md-0 my-3">
-                    <h1><b>Djonno</b> Fitness</h1>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 d-flex justify-content-center pr-md-5">
-                <img src="img/gym2.jpeg" alt="Gym image" height="250px">
-            </div>
-        </div>
+    <h1 class="text-center my-4">Gratis proefles</h1>
 
-        <h2 class="py-5 d-flex justify-content-center">Prijzen</h2>
+    <h5 class="font-weight-bold">Wil jij een gratis proefles? Schrijf je nu in!</h5>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="naam" name="naam" class="form-control">
+                            <label for="naam" class="">Naam</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="email" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="onderwerp" name="onderwerp" class="form-control">
+                            <label for="onderwerp" class="">Onderwerp</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="bericht" name="bericht" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="bericht">Bericht</label>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row">
-            <div class="col-md-4 col-12 py-2 py-md-0 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Onbeperkt</h5>
-                        <p class="card-text">Onbeperkt sporten en jaarlijks opzegbaar.</p>
-                        <a href="prijzen.html" class="btn btn-success">€19.99</a>
-                    </div>
-                </div>
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary">Versturen</a>
             </div>
-            <div class="col-md-4 col-12 py-2 py-md-0 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Onbeperkt incl. Spa</h5>
-                        <p class="card-text">Onbeperkt sporten en spa. Maandelijks opzegbaar.</p>
-                        <a href="prijzen.html" class="btn btn-success">€28,99</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 py-2 py-md-0 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Onbepert incl. Spa & voedingschema</h5>
-                        <p class="card-text">Onbeperkt sporten en jaarlijks opzegbaar.</p>
-                        <a href="prijzen.html" class="btn btn-success">€34,99</a>
-                    </div>
-                </div>
-            </div>
+            <div class="status"></div>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Harmonielaan 1</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>030-4365642</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>Djonno@fitness.nl</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 
     <!-- end container -->
     </div>
@@ -121,4 +143,6 @@
 
 </body>
 
+</html>
+</body>
 </html>

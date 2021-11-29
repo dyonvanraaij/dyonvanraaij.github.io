@@ -11,3 +11,7 @@ body {
 .card {
     border: 1px solid rgba(0,0,0,0.250);
 }
+
+.bg-grey {
+    background-color: rgba(88, 88, 88, 0.75);
+}
